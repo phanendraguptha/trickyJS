@@ -24,6 +24,22 @@ var person = { name: "john" };
 var upt = { ...person, name: "bob" };
 // console.log(upt);//{name:"bob"}
 
+// spread operator deep dive
+var person = { 
+   name: "john",
+   address:{
+    country:"USA",
+    city:"san fransico"
+  }
+};
+var upt = { ...person,
+           adress:{
+             ...person.address,
+             city:"new york"
+           },
+           name: "bob" };
+// console.log(upt);
+
 // adding, removing, and updating
 var no = [1, 2, 3];
 
