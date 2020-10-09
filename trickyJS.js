@@ -16,6 +16,7 @@ var trim = str => str.trim();
 var toLowerCase = str => str.toLowerCase();
 var wrap = type => str => `<${type}>${str}</${type}>`;
 // var transform = pipe(trim, toLowerCase, wrap("div"));
+// console.log(transform(input));
 // console.log(wrap("div")(toLowerCase(trim(" hello"))));
 
 // spread operator
